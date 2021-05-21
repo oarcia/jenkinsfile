@@ -13,7 +13,7 @@ stages{
   }
   stage('jenkins build alerts'){
    steps{
-  slackSend(channel: '#graphdb-mx', color: '#009933', message: 'job1 build sucessful', teamDomain: 'GraphDB-MX',
+  slackSend(channel: '#graphdb-mx', color: '#009933', message: 'job1 build sucessful', teamDomain: 'graphDB-MX',
   tokenCredentialId: 'DEMON')
   }
   }
